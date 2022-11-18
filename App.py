@@ -14,6 +14,11 @@ savedModel.summary()
 
 def main():
     st.title("Safaricom Shares Price Prediction Application")
+      html_temp = """
+    <div style="background-color:#025246 ;padding:10px">
+    <h2 style="color:Green;text-align:center;"> Prediction ML App </h2>
+    </div>
+    """
     st.header('Enter the Day to Predict Price:')
     Day = st.number_input('Day Number:', min_value=0, max_value=2000, value=1)
     if st.button('Predict'):
