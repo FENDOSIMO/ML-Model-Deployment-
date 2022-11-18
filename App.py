@@ -14,7 +14,7 @@ savedModel.summary()
 
 def main():
     st.title("Safaricom Shares Price Prediction Application")
-      html_temp = """
+    html_temp = """
     <div style="background-color:#025246 ;padding:10px">
     <h2 style="color:Green;text-align:center;"> Prediction ML App </h2>
     </div>
