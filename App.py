@@ -15,7 +15,7 @@ savedModel.summary()
 def main():
     st.title("Safaricom Shares Price Prediction Application")
     st.header('Enter the Day to Predict Price:')
-    Day = st.number_input('Day Number:', min_value=0, max_value=1000, value=1)
+    Day = st.number_input('Day Number:', min_value=0, max_value=2000, value=1)
     if st.button('Predict'):
         st.code(savedModel.predict(Day))
         st.success(f'The predicted Price of Shares is {prediction[0]:.2f}')
